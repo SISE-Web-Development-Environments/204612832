@@ -1,7 +1,67 @@
+@import url("emojionearea.min.css");
+
 #menu
 {
 	position: fixed;
 	width: 100%;
-	height: 35px;
+	height: 40px;
 	background: white;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	overflow: hidden;
+	background-color: #333;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
 }
+  
+  li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+	background-color: #111;
+  }
+
+
+section {
+	text-align: center;
+	margin: 50px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+
+  #spa{
+	direction: rtl;
+	margin-left: 200px;
+	margin-right: 200px;
+  }
+
+  #form{
+	  /* margin-left: 500px;
+	  margin-right: 500px; */
+
+	/* Center the form on the page */
+	margin: 0 auto;
+	width: 400px;
+	
+	/* Form outline */
+	padding-right: 2em;
+	padding-left: 2em;
+	border: 1px solid #CCC;
+	border-radius: 1em;
+	overflow: auto;
+  }
+
+
+  .emojionearea > .emojionearea-editor {
+    min-height: 100px;
+	max-height: 100px;
+	
+
+}
+

@@ -9,36 +9,30 @@
     <meta name="description" content="This Web site will help 
    you get to know Ziv Gura, see some photos of him and listen to some of his
    favorite music."/>
+   <script
+   src="https://code.jquery.com/jquery-3.4.1.min.js"
+   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+   crossorigin="anonymous"></script>
+   <script src="emojionearea.min.js"></script>
 
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+    
     <div id="menu">
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#photos">My Photos</a></li>
-      <li><a href="#playlist">My Playlist</a></li>
-      <li><a href="#like">Like</a></li>
-      <li><a href="#qrcoder">QR code</a></li>
-      <li><a href="#spa">Q&A</a></li>
-      <li><a href="#contact">Contact Me</a></li>
+      <li style="float: left;"><a href="#about">About Me</a></li>
+      <li style="float: left;"><a href="#photos">My Photos</a></li>
+      <li style="float: left;"><a href="#playlist">My Playlist</a></li>
+      <li style="float: left;"><a href="#like">Like</a></li>
+      <li style="float: left;"><a href="#qrcoder">QR code</a></li>
+      <li style="float: left;"><a href="#spa">Q&A</a></li>
+      <li style="float: left;"><a href="#contact">Contact Me</a></li>
     </div>
           
     <section id="about" class="section" >
       <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <B><U>About me</U></B>
+      <h1>About me</h1>
       <br/>
       My name is Ziv Gura, I'm 26 years old. Originlly from Ness-Ziona. I'm a third year student of Information Systems Engineering in Ben Gurion University.
       <br/>
@@ -46,24 +40,12 @@
       <br/>
       I'm highlly motivated to learn about web programming: what we can, and can't do, how to do it and learn different ways to do it. 
       <br/>
+      <br/>
+      <br/>
     </section>
 
     <section id="photos" class="section">
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <B><U>My photos</U></B>
+      <h1>My photos</h1>
       <br/>
       <img src="photo1.jpg" width="300" height="200"/> <img src="photo9.jpg" width="300" height="200"/>
       <br/>
@@ -76,117 +58,94 @@
     </section>
 
     <section id="playlist" class="section">
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <B><U>My playlist</U></B>
+      <h1>My playlist</h1>
       <br/>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLgaFNC_I_Zklp8gMbHzxenI1itp_5mN4b" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br/>
       <br/>
       <br/>
     </section>
 
     <section id="like" class="section">
+      <h1>Give me a like</h1>
       <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      give me a like
-      <br/>
+      <div class="fb-like" data-href="https://sise-web-development-environments.github.io/204612832/"
+      data-width="70px" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
       <br/>
       <br/>
     </section>
 
     <section id="qrcoder" class="section">
+      <h1>Scan my code</h1>
       <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      scan my code
-      <br/>
-      <br/>
+      <img class="qr_image" width="150" height="150" src="https://qrfree.kaywa.com/?l=1&amp;s=8&amp;d=https%3A%2F%2Fsise-web-development-environments.github.io%2F204612832%2F" alt="QRCode" style="display:inline">
       <br/>
     </section>
 
     <section id="spa" class="section">
       <br/>
+      <h1>Ans</h1>
       <br/>
+      <u>תשובה 1:</u>
       <br/>
+     שלושה הבדלים עיקריים בין web1, web2 ו web3:
+      <ol type="1" 	style="text-align: right;">
+        <li>
+          <b>סטטיות הדפים</b>
+           - בweb1 הדפים הם סטטים לגמרי, ב web2 הדפים קצת יותר דינמיים ומאפשרים להציג נתונים בצורות שונות ובweb3 הדפים לגמרי דינמיים המציגים נתונים מתעדכנים ומנשקים מגיבים.
+        </li>
+        <li>
+          <b>קריאה/כתיבה</b>
+           - בweb1 ניתן רק לקרוא את תוכן הדף, בweb2 ניתן לקרוא וגם לכתוב פרטים בדף וב web3 ניתן גם לקרוא, גם לכתוב וגם להריץ אפליקציות.
+        </li>
+        <li>
+          <b>תוצאות מנועי חיפוש</b>
+          - בweb1 התוצאות רחבות מאוד ועוסקות בנושא הכללי של החיפוש, בweb2 התוצאות ממוקדות יותר, עדיין עוסקות בנושא הכללי אך מקבלות מיקוד מתגים שמופו ידנית ובweb3 התוצאות ממוקדות הרבה יותר בזכות תגים שמופו טוב יותר ובצורה אוטומטית  
+        </li>
+      </ol>
       <br/>
+      <u>תשובה 2:</u>
       <br/>
+      תצוגת השאילתה "תופעות לוואי של תרופות":
       <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      ans
-      <br/>
-      <br/>
+      <ul style="text-align: right;">
+        <li>
+          web1: הרבה מאוד תוצאות, רובן מעולם הpharm, שכוללות את המילים הספציפיות מהשאילתה. ייתכן שהתוצאות כלל לא יהיו רלוונטיות למשתמש.
+        </li>
+        <li>
+          web2: תוצאות המכילות את מילות המפתח בשאילתה וכן מכילות תגים שממקדים יותר את התוצאות לרלוונטיות למשתמש מעולם הpharm.
+        </li>
+        <li>
+          web3: תוצאות מגוונות: גם מעולם ה pharm גם פורומים שכתבו פוסטים על תופעות לוואי כלשהן, גם אתרי פרסום העוסקים בפתרון תופעות לוואי של תרופות וגם דפים שהמשתמש ביקר בהם בעבר שרלוונטים לשאילתה.
+        </li>
+      </ul>
       <br/>
     </section>
 
     <section id="contact" class="section">
       <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      contact me
-      <br/>
+      <h1>Contact me</h1>
+        <form id="form" method="POST" action="mailto:zivgur@post.bgu.ac.il" autocomplete="on">
+          <p>
+            <strong>Your email:</strong>
+            <input name="from" type="text" size="25">
+          </p>
+          <p>
+            <strong>Massage:</strong>
+            <textarea id="content" style="display: none;"></textarea>
+            
+            <script>
+              $(document).ready(function(){
+                $("#content").emojioneArea({
+                  pickerPosition: "bottom"
+                 });
+              })
+            </script>
+          </p>
+          <p>
+            <input type="submit" value="Send">
+          </p>
+        </form>
       <br/>
       <br/>
     </section>
